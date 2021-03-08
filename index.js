@@ -14,10 +14,11 @@ The function should:
   
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
-
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
+  return {name, price, category}
 }
+const item = {name: 'birria tacos', price: 7, category: 'Lunch'};
+console.log(item);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -27,7 +28,26 @@ Test your createMenuItems function by doing the following:
   3. Log each returned object to the console  
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
-*/
+*/function createMenuItem(name, price, category){
+  return {name, price, category}
+}
+const items = [{
+  name: 'Burger',
+  price: 5,
+  category: 'Dinner'
+},
+{
+  name: 'Pizza',
+  price: 3,
+  category: 'Dinner'
+},
+{
+  name: 'Chicken Alfredo',
+  price: 10,
+  category: 'Dinner'
+},
+]
+console.log(items);
 
 
 
@@ -78,7 +98,8 @@ Using the reviews array above do the following: (no function needed)
   1. Following the same format (name, rating, feedback), add a new fictitious review object to the reviews array
   2. log the whole array to the console, make sure the new review is inside of it   
 */
-
+const fakeReview = {name: 'Tamara', rating: 2, feedback: 'Would not recommend.'}
+console.log(reviews.concat(fakeReview));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
